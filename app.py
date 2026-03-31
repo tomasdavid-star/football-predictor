@@ -6,7 +6,7 @@ import google.generativeai as genai
 import json
 
 # KLÍČ PRO AI 
-API_KEY = "AIzaSyC-N4wVuOLei2Agn6J1z4kTNKqs_m9jR1w"
+API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # KONFIGURACE STRÁNKY 
 st.set_page_config(
