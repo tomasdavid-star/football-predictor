@@ -112,7 +112,7 @@ def load_data(filename):
 df = load_data(selected_file)
 
 if df is None:
-    st.error(f"❌ Chyba: Soubor **{selected_file}** nebyl nalezen!")
+    st.error(f"Chyba: Soubor **{selected_file}** nebyl nalezen!")
     st.stop()
 
 # Výpočet ligového průměru gólů a síly útoku a obrany
