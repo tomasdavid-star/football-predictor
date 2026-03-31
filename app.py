@@ -231,7 +231,7 @@ def render_prediction_section(title, home_team, away_team, lambda_home, lambda_a
 # Hlavní část
 if st.sidebar.button("🚀 ANALYZOVAT ZÁPAS"):
     if home_team == away_team:
-        st.warning("⚠️ Tým nemůže hrát sám se sebou!")
+        st.warning("Tým nemůže hrát sám se sebou!")
     else:
         # Aktuální
         # Načtení statistik a výpočet lambdy
