@@ -5,10 +5,10 @@ from scipy.stats import poisson
 import google.generativeai as genai
 import json
 
-# KLÍČ PRO AI 
+# Klíč pro AI
 API_KEY = st.secrets["GEMINI_API_KEY"]
 
-# KONFIGURACE STRÁNKY 
+# Konfigurace stránky 
 st.set_page_config(
     page_title="Football Predictor",
     page_icon="⚽",
@@ -77,7 +77,7 @@ st.markdown("<h1 style='text-align: center;'>⚽ FOOTBALL PREDICTOR ⚽</h1>", u
 st.markdown("<p style='text-align: center; color: #555; font-size: 18px;'>Pokročilá analýza a predikce výsledků</p>", unsafe_allow_html=True)
 st.divider()
 
-# VÝBĚR LIGY
+# Výběr ligy
 st.sidebar.header("🏆 Nastavení Soutěže")
 league_choice = st.sidebar.selectbox("Vyber ligu:", ("🇨🇿 Česk Liga (Chance Liga)", "🇬🇧 Premier League", "🇪🇸 La Liga"))
 files = {"🇨🇿 Česk Liga (Chance Liga)": "data.csv", "🇬🇧 Premier League": "premier_league.csv", "🇪🇸 La Liga": "laliga.csv"}
