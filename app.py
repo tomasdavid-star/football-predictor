@@ -393,7 +393,7 @@ if st.sidebar.button("🚀 ANALYZOVAT ZÁPAS"):
                 except Exception as e:
                     st.error(f"Při zpracování AI dat došlo k chybě. Detail chyby: {e}")
         else:
-            st.warning("⚠️ Pro zobrazení AI predikce musíš vložit svůj API klíč přímo do kódu.")
+            st.warning("Pro zobrazení AI predikce musíš vložit svůj API klíč přímo do kódu.")
 
 else:
     st.info("👈 Vyber si ligu a týmy v levém menu a klikni na 'ANALYZOVAT ZÁPAS'.")
